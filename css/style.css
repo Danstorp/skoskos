@@ -1,0 +1,155 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#grid-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer";
+   
+}
+
+header, main, footer{
+    padding: 1rem;
+
+}
+
+header{
+    font-size: 1.5rem;
+    font-weight: 600;
+    grid-area: header;
+    background-color: #d9d9d9;
+    letter-spacing: 8px;
+   
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+header nav div{
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo{
+    text-decoration: none;
+    color: black;
+
+}
+
+.navbar{
+    display: none;
+    letter-spacing: -1px;
+    
+}
+
+.responsive{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #232323;
+    margin: 0;
+    padding: 0;
+    top: 35px;
+    width: 100%;
+    list-style: none;
+    gap: 1rem;
+}
+
+.responsive a{
+    color: fff;
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.buy-btn{
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #232323;
+    color: #fff;
+    font-weight: 400;
+}
+
+main{
+    grid-area: main;
+    text-align: center;
+}
+
+main section img{
+    width:100%;
+}
+
+.section4-image{
+    width: 140px;
+    height: auto;
+
+}
+
+.ordtak{ 
+    text-align: center;
+    padding: 50x;
+    margin: -6px;
+    
+}
+
+
+/*Kode til produktsiden */
+
+.produkt-tekst{
+    text-align: left;
+    font-weight: 200;
+    
+}
+
+.kategoriliste{
+    text-align: center;
+}
+
+/*Kode til returside*/
+
+.rettigheter{
+    text-align: center;
+    font-size: small;
+    
+}
+
+footer{
+    grid-area: footer;
+    color: #ffff;
+    background-color: #232323;
+    
+
+}
+
+.linktekst{
+    color: white;
+    text-decoration: none;
+
+}
+
+
+@media only screen and (min-width: 720px){
+    
+    .grid-container {
+        grid-template-columns: repeat(4, 1fr); 
+    }
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        list-style: none;
+        margin: none;
+       
+    }
+
+}

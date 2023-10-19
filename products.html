@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang= "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="widt=device width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css"> 
+        <link href="css/font/css/fontawesome.css" rel="stylesheet">
+        <link href="css/font/css/brands.css" rel="stylesheet">
+        <link href="css/font/css/solid.css" rel ="stylesheet">
+        <link rel="stylesheet" href="css/style.css" type= "text/css">
+        <title>Skoskos</title>
+    </head>
+
+    <body>
+        <div id="grid-container">
+        <header>
+            <nav>
+                <a href="index1.html" id="logo">Skoskos</a>
+                <div>
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i id="ham" class="fa-solid fa-bars"></i>
+                    
+                </div>
+
+                <ul class="navbar">
+                    <li><a href="#">Hjem</a>
+                    <li><a href="#">Produkter</a>              
+                    <li><a href="#">Om oss</a>
+                </ul>
+
+            </nav>
+            <section>
+                
+            </section>
+        </header>
+
+        <main class="produkside-main">
+            
+            <!--Seksjon 1, Ferske Modeller:-->
+
+            <article>
+                <h3 class="produkt-tekst">Herresko:</h3>
+
+                <img src="img/rasksko.jpg" alt="raskesko" class="section4-image">
+                <img src="img/spenstigsko.jpg" alt="spenstigsko" class="section4-image">
+                <img src="img/skoskoflow.jpg" alt="flow" class="section4-image">
+                <img src="img/future7.jpg" alt="future7" class="section4-image">
+
+                
+            </article>
+            </section>
+
+            <!--Seksjon 2, Våre kategorier-->
+            <section>
+                <article>
+                    <h5>Våre kategorier</h5>
+                 <p class="kategoriliste">Joggesko Sneakers Sandaler Tursko Fotballsko Treningsko Støvler</p>   
+                </article>
+            </section>
+
+            <!--Seksjon 5, logo og ordtak-->
+            <article class="bunnartikkel">
+                <h5>Skoskos</h5>
+                <h5>Skoskos</h5>
+                <p>Ikke tråkk feil,</p>
+                <p>velg sko som virkelig varer</p>
+            </article>
+
+
+        </main>
+        
+        <footer>
+            <h4>Skoskos</h4>
+            <p>retur og leveranse</p>
+            
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+
+        </footer>
+
+        </div>
+        <script>
+           let x = document.querySelector(".navbar")
+
+           document.getElementById("ham").addEventListener("click", (e) =>{
+            if (x.className ==="navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar"
+            
+            }
+
+           })
+        </script>
+    </body>
